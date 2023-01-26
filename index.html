@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Juan Noriega</title>
-	<link rel="stylesheet" href="css/styles.css">
+
+	<link rel="stylesheet" href="css/styles.css">	<!--Vínculo CSS-->
 	
 	<!--Google Fonts "Barlow" y "Barlow condensed"-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +19,8 @@
 
 </head>
 <body>
+
+	<script src="js/function.js"></script>	<!--Vínculo JS-->
 
 	<!--
 	<div class="col-1">""</div>
@@ -29,11 +36,11 @@
 		<h1>JUAN NORIEGA</h1>
 		<h2>PROF. DE NIVEL INICIAL</h2>
 	
-		<h3>OBJETIVOS PROFESIONALES</h3>
-		<p>Desarrollo planificaciones divertidas de matemáticas, inglés y ciencias para niños de todas las edades. Mi objetivo es enseñar a niños en zonas alejadas y vulnerables.</p>
+		<h3 onclick="ocultarSeccion('seccion1')">OBJETIVOS PROFESIONALES</h3>
+		<p id="seccion1">Desarrollo planificaciones divertidas de matemáticas, inglés y ciencias para niños de todas las edades. Mi objetivo es enseñar a niños en zonas alejadas y vulnerables.</p>
 
-		<h3>INTERESES</h3>
-		<ul class="fa-ul">
+		<h3 onclick="ocultarSeccion('seccion2')">INTERESES</h3>
+		<ul id="seccion2" class="fa-ul">
 			<li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Conocimiento en arte</li>
 			<li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Literatura</li>
 			<li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Tutorías en línea</li>
@@ -42,8 +49,8 @@
 			<li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Poesía</li>
 		</ul>
 
-		<h3>INFORMACIÓN DE CONTACTO</h3>
-		<ul class="fa-ul">
+		<h3 onclick="ocultarSeccion('seccion3')">INFORMACIÓN DE CONTACTO</h3>
+		<ul id="seccion3" class="fa-ul">
 			<li><span class="fa-li"><i class="fa-solid fa-mobile-screen-button"></i></span>15 3123 4567</li>
 			<li><span class="fa-li"><i class="fa-solid fa-phone"></i></span>011 2123 4568</li>
 			<li><span class="fa-li"><i class="fa-solid fa-laptop"></i></span>www.sitioincreible.com.ar</li>
@@ -59,44 +66,48 @@
 	<!--
 	<div class="col-5">
 	-->
-		<h3>ESCOLARIDAD</h3>
-		<h4>Universidad de San Andrés</h4>
-		<p>Licenciatura en Educación | Mejor promedio</p>
-		<ul>
-			<li>Miembro del círculo de educadores</li>
-			<li>Miembro del taller de escritores</li>
-			<li>Miembro del taller de matemáticas</li>
-			<li>Miembro del taller de ciencias</li>
-			<li>Miembro de la organización de física</li>
-		</ul>
-		<h4>Escuela Secundaria Roca</h4>
-		<p>Estudiante de honor</p>
-		<p>Creador del taller de escritura</p>
-		<ul>
-			<li>Mejor promedio</li>
-			<li>Mejor compañero</li>
-			<li>Creador del taller de escritura y miembro del taller de matemática</li>
-			<li>Finalista de olimpíadas de física</li>
-		</ul>
+		<h3 onclick="ocultarSeccion('seccion4')">ESCOLARIDAD</h3>
+		<div id="seccion4">
+			<h4>Universidad de San Andrés</h4>
+			<p>Licenciatura en Educación | Mejor promedio</p>
+			<ul>
+				<li>Miembro del círculo de educadores</li>
+				<li>Miembro del taller de escritores</li>
+				<li>Miembro del taller de matemáticas</li>
+				<li>Miembro del taller de ciencias</li>
+				<li>Miembro de la organización de física</li>
+			</ul>
+			<h4>Escuela Secundaria Roca</h4>
+			<p>Estudiante de honor</p>
+			<p>Creador del taller de escritura</p>
+			<ul>
+				<li>Mejor promedio</li>
+				<li>Mejor compañero</li>
+				<li>Creador del taller de escritura y miembro del taller de matemática</li>
+				<li>Finalista de olimpíadas de física</li>
+			</ul>
+		</div>
 
-		<h3>EXPERIENCIA LABORAL</h3>
-		<h4>Profesor de Nivel Inicial</h4>
-		<p>Jardín Santa Lucía | Septiembre 2019 - Presente</p>
-		<ul>
-			<li>Profesor de sala de 5 años</li>
-			<li>Maestro extracurricular de arte, música e inglés en sala de 4 años</li>
-			<li>Organizador de los viajes escolares</li>
-		</ul>
-		<h4>Profesor auxiliar</h4>
-		<p>Jardín Solcito | 2018 - 2019</p>
-		<ul>
-			<li>Enseñé a niños de 3 a 6 años.</li>
-			<li>Implementé planificaciones de matemáticas divertidas e informativas para los estudiantes.</li>
-			<li>Ayudé a los docentes de las salas en las tareas diarias.</li>
-		</ul>
+		<h3 onclick="ocultarSeccion('seccion5')">EXPERIENCIA LABORAL</h3>
+		<div id="seccion5">
+			<h4>Profesor de Nivel Inicial</h4>
+			<p>Jardín Santa Lucía | Septiembre 2019 - Presente</p>
+			<ul>
+				<li>Profesor de sala de 5 años</li>
+				<li>Maestro extracurricular de arte, música e inglés en sala de 4 años</li>
+				<li>Organizador de los viajes escolares</li>
+			</ul>
+			<h4>Profesor auxiliar</h4>
+			<p>Jardín Solcito | 2018 - 2019</p>
+			<ul>
+				<li>Enseñé a niños de 3 a 6 años.</li>
+				<li>Implementé planificaciones de matemáticas divertidas e informativas para los estudiantes.</li>
+				<li>Ayudé a los docentes de las salas en las tareas diarias.</li>
+			</ul>
+		</div>
 
-		<h3>LOGROS</h3>
-		<ul class="fa-ul">
+		<h3 onclick="ocultarSeccion('seccion6')">LOGROS</h3>
+		<ul id="seccion6" class="fa-ul">
 			<li><span class="fa-li"><i class="fa-solid fa-star"></i></span>Mejor maestro (2020)</li>
 			<li><span class="fa-li"><i class="fa-solid fa-star"></i></span>Maestro más prometedor (2019)</li>
 			<li><span class="fa-li"><i class="fa-solid fa-star"></i></span>Empleado del año (2018)</li>
