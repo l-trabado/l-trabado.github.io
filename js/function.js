@@ -1,19 +1,7 @@
+//function.js
 
-/*
-<script language="javascript"> 
-function toggle(elementId) {
-    var ele = document.getElementById(elementId);
-    if(ele.style.display == "block") {
-            ele.style.display = "none";
-    }
-    else {
-        ele.style.display = "block";
-    }
-} 
-</script>
-*/
-
-function ocultarSeccion(elementId){
+function ocultarSeccion(elementId, disparador){
+    alternarDisparador(disparador);
     var ele = document.getElementById(elementId);
     if(ele.style.display == "none") {
             ele.style.display = "block";

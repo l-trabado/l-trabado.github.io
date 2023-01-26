@@ -1,3 +1,5 @@
+<!--index.html-->
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -15,7 +17,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@500&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
 
-	<script src="https://kit.fontawesome.com/ee8ca4bdfe.js" crossorigin="anonymous"></script>	<!--Biblioteca Font Awesome-->
+	<!--Bibliotecas Font Awesome-->
+	<script src="https://kit.fontawesome.com/ee8ca4bdfe.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	<!--Requerido para alternarDisparador()-->
 
 </head>
 <body>
@@ -35,11 +39,11 @@
 
 		<h1>JUAN NORIEGA</h1>
 		<h2>PROF. DE NIVEL INICIAL</h2>
-	
-		<h3><i class="fa-solid fa-angle-up" onclick="alternarDisparador(this)"></i>OBJETIVOS PROFESIONALES</h3>
+
+		<h3><i class="fa-solid fa-angle-up" onclick="ocultarSeccion('seccion1', this)"></i>OBJETIVOS PROFESIONALES</h3>
 		<p id="seccion1">Desarrollo planificaciones divertidas de matemáticas, inglés y ciencias para niños de todas las edades. Mi objetivo es enseñar a niños en zonas alejadas y vulnerables.</p>
 
-		<h3 onclick="ocultarSeccion('seccion2')">INTERESES</h3>
+		<h3><i class="fa-solid fa-angle-up" onclick="ocultarSeccion('seccion2', this)"></i>INTERESES</h3>
 		<ul id="seccion2" class="fa-ul">
 			<li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Conocimiento en arte</li>
 			<li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Literatura</li>
@@ -49,7 +53,7 @@
 			<li><span class="fa-li"><i class="fa-solid fa-check"></i></span>Poesía</li>
 		</ul>
 
-		<h3 onclick="ocultarSeccion('seccion3')">INFORMACIÓN DE CONTACTO</h3>
+		<h3><i class="fa-solid fa-angle-up" onclick="ocultarSeccion('seccion3', this)"></i>INFORMACIÓN DE CONTACTO</h3>
 		<ul id="seccion3" class="fa-ul">
 			<li><span class="fa-li"><i class="fa-solid fa-mobile-screen-button"></i></span>15 3123 4567</li>
 			<li><span class="fa-li"><i class="fa-solid fa-phone"></i></span>011 2123 4568</li>
@@ -66,7 +70,7 @@
 	<!--
 	<div class="col-5">
 	-->
-		<h3 onclick="ocultarSeccion('seccion4')">ESCOLARIDAD</h3>
+	<h3><i class="fa-solid fa-angle-up" onclick="ocultarSeccion('seccion4', this)"></i>ESCOLARIDAD</h3>
 		<div id="seccion4">
 			<h4>Universidad de San Andrés</h4>
 			<p>Licenciatura en Educación | Mejor promedio</p>
@@ -88,7 +92,7 @@
 			</ul>
 		</div>
 
-		<h3 onclick="ocultarSeccion('seccion5')">EXPERIENCIA LABORAL</h3>
+		<h3><i class="fa-solid fa-angle-up" onclick="ocultarSeccion('seccion5', this)"></i>EXPERIENCIA LABORAL</h3>
 		<div id="seccion5">
 			<h4>Profesor de Nivel Inicial</h4>
 			<p>Jardín Santa Lucía | Septiembre 2019 - Presente</p>
@@ -106,7 +110,7 @@
 			</ul>
 		</div>
 
-		<h3 onclick="ocultarSeccion('seccion6')">LOGROS</h3>
+		<h3><i class="fa-solid fa-angle-up" onclick="ocultarSeccion('seccion6', this)"></i>LOGROS</h3>
 		<ul id="seccion6" class="fa-ul">
 			<li><span class="fa-li"><i class="fa-solid fa-star"></i></span>Mejor maestro (2020)</li>
 			<li><span class="fa-li"><i class="fa-solid fa-star"></i></span>Maestro más prometedor (2019)</li>
