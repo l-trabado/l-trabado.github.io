@@ -13,7 +13,7 @@ function toggle(elementId) {
 </script>
 */
 
-function ocultarSeccion(elementId) {
+function ocultarSeccion(elementId){
     var ele = document.getElementById(elementId);
     if(ele.style.display == "none") {
             ele.style.display = "block";
@@ -21,4 +21,8 @@ function ocultarSeccion(elementId) {
     else {
         ele.style.display = "none";
     }
+}
+
+function alternarDisparador(disparador){
+    disparador.classList.toggle("fa-angle-down");
 }
