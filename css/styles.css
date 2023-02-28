@@ -52,18 +52,49 @@ ul{
 	font-family: 'Barlow', sans-serif;
 }
 
-.col-1 {width: 8.33%; background-color: #166ab8; float: left;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%; float: left;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+input{
+	width: 100%;
+	height: 25px;
+	margin: 5px 0;
+	border-radius: 6px;
+}
+
+textarea{
+	width: 100%;
+	height: 75px;
+	margin: 5px 0;
+	border-radius: 6px;
+	resize: none;
+}
+
+[class*="col-"]{
+	float: left;
+	padding: 15px;
+	/* Para dispositivos móviles */
+	width: 100%;
+}
+
+@media only screen and (min-width: 768px){
+	/* Para dispositivos de escritorio */
+	.col-1 {width: 8.33%; /*background-color: #166ab8; float: left;*/}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%; /*float: left;*/}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+}
+
+.fila::after{
+	content: "";
+	clear: both;
+	display: table;
+}
 
 .recortar_imagen{
 	margin: auto;
@@ -83,4 +114,3 @@ ul{
 .fa-li{
 	color: #166ab8;
 }
-
