@@ -89,7 +89,7 @@ textarea{
 	.col-11 {width: 91.66%;}
 	.col-12 {width: 100%;}
 	input{width: 25%; height: 25px; margin: 5px 0; border-radius: 6px;}
-	textarea{width: 50%; height: 75px; margin: 5px 0; border-radius: 6px; resize: none;}
+	textarea{width: 75.5%; height: 75px; margin: 5px 0; border-radius: 6px; resize: none;}
 }
 
 .fila::after{
